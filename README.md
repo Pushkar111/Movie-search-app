@@ -4,6 +4,7 @@ A React application to search for movies and display detailed information using 
 
 ## Table of Contents
 
+- [Project Demo](#projectdemo)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -13,6 +14,13 @@ A React application to search for movies and display detailed information using 
 - [Styling](#styling)
 - [Links](#links)
 - [License](#license)
+
+## Project Demo
+
+Watch the demo of the project 
+<div align="center">
+  <video src="./src/assets/recording/movie-search-app.mp4" controls width="700"></video>
+</div>
 
 ## Features
 
