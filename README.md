@@ -22,6 +22,9 @@ Watch the demo of the project
   <video src="./src/assets/recording/movie-search-app.mp4" controls width="700"></video>
 </div>
 
+
+
+
 ## Features
 
 - Search for movies and web series using the OMDB API.
@@ -104,5 +107,5 @@ movie-search-app/
 
 ## Links
 - Solution URL : [GitHub Repository](https://github.com/Pushkar111/movie-search-app)
-- Live Site URL : [movie-search-app]()
+- Live Site URL : [movie-search-app](movie-find-app.netlify.app)
 - Author : [Pushkar Modi](https://pushkarmodidev.netlify.app/)
