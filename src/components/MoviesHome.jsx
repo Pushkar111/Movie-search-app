@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import { MovieCard } from "./MovieCard";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
-// import { Loader } from "./Loader";
-import SkeletonLoader from "./SkeletonLoader";
+import Loader from "./Loader";
 
 export const MoviesHome = () => {
     const location = useLocation();
@@ -37,7 +36,7 @@ export const MoviesHome = () => {
     };
 
     if (loading) {
-        return <SkeletonLoader />;
+        return <Loader/>;
     }
 
 
