@@ -11,7 +11,7 @@ export const MovieDetail = () => {
 
     const fetchMovieDetails = async () => {
         try {
-            const response = await axios.get(`https://www.omdbapi.com/?apikey=YOUR_API_KEY&i=${imdbID}`);
+            const response = await axios.get(`https://www.omdbapi.com/?apikey=1e994a5&i=${imdbID}`);
             if (response.data.Response === "True") {
                 setMovieDetails(response.data);
             } else {

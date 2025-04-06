@@ -12,7 +12,7 @@ export const MoviesNavbar = () => {
   };
 
   const handleMovies = async () => {
-    const moviesResponse = await axios.get("https://www.omdbapi.com/?apikey=YOUR_API_KEY&s=movie&type=movie");
+    const moviesResponse = await axios.get("https://www.omdbapi.com/?apikey=1e994a5&s=movie&type=movie");
 
     if (moviesResponse.data.Search && moviesResponse.data.Response === "True") {
       console.log("Movies Option: " , moviesResponse.data.Search); // Array(10)
@@ -21,7 +21,7 @@ export const MoviesNavbar = () => {
   };
 
   const handleWebSeries = async () => {
-    const webSeriesResponse = await axios.get("https://www.omdbapi.com/?apikey=YOUR_API_KEY&s=webseries&type=series");
+    const webSeriesResponse = await axios.get("https://www.omdbapi.com/?apikey=1e994a5&s=webseries&type=series");
 
     if (webSeriesResponse.data.Search && webSeriesResponse.data.Response === "True") {
       console.log("Web Series Option: " , webSeriesResponse.data.Search); // Array(10)
@@ -43,7 +43,7 @@ export const MoviesNavbar = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await axios.get(`https://www.omdbapi.com/?apikey=YOUR_API_KEY&s=${value}`);
+    const response = await axios.get(`https://www.omdbapi.com/?apikey=1e994a5&s=${value}`);
 
     if (response.data.Search && response.data.Response === "True") {
       console.log(response.data.Search); // Array(10)
@@ -53,7 +53,7 @@ export const MoviesNavbar = () => {
 
   // Search Movies
   const searchMovies = async (searchValue) => {
-    const response = await axios.get(`https://www.omdbapi.com/?apikey=YOUR_API_KEY&s=${searchValue}`);
+    const response = await axios.get(`https://www.omdbapi.com/?apikey=1e994a5&s=${searchValue}`);
 
     if (response.data.Search && response.data.Response === "True") {
       console.log("Search Movies: ", response.data.Search); // Array(10)
